@@ -4,7 +4,7 @@ public class myCar {
   private String carModel;
   private int carMake;
   private double carPrice;
-  private double AverageCar;
+  
   
   public myCar(String carModel, int carMake, double carPrice){
       //constructor
