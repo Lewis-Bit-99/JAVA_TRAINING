@@ -1,6 +1,6 @@
 import java.util.Scanner; // Import the Scanner class
 
-public class MyCars {
+public class NameImport {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); 
