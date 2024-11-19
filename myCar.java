@@ -1,27 +1,24 @@
+import java.util.Scanner;
+
 public class myCar {
 
-
-  private String carModel;
-  private int carMake;
-  private double carPrice;
+  private String carModel, carModel2, carModel3;
+  private int carMake1,carMake2,carMake3;
+  private double carPrice1,carPrice2,carPrice3;
   
   
   public myCar(String carModel, int carMake, double carPrice){
       //constructor
   
     this.carModel = carModel;
+
     this.carMake = carMake;
     this.carPrice = carPrice;
   
   }
   
   public void Calculation() {
-    double Saga = 16.44;
-    double Porsche = 578.61;
-    double Civic = 50.43;
-    double CarAVG = (Saga + Porsche + Civic) / 3;
     
-    System.out.println("The Average Price of 3 Cars :" + CarAVG + "k");
   }
   
   public static void main(String[] args){
@@ -33,7 +30,13 @@ public class myCar {
           System.out.println("Manufacturing date :" + carObj.carMake);
           System.out.println("Car Price :" + carObj.carPrice);
 
-       carObj.Calculation();
+
+          Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+          System.out.println("Enter username");
+
+          String userName = myObj.nextLine();  // Read user input
+          System.out.println("Username is: " + userName);  // 
+          carObj.Calculation();
 
   
         }
