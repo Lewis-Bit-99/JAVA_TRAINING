@@ -1,6 +1,6 @@
 import java.util.Scanner; // Import the Scanner class
 
-public class MyCars {
+public class AveragaPriceCar {
 
     public static void main(String[] args) {
 
@@ -42,11 +42,6 @@ public class MyCars {
 
         Double AvgPrice = (carPrice1 + carPrice2 + carPrice3)/3;
         System.out.println("The Average Price Of 3 Cars is : " + AvgPrice);
-
-
-
-
-
 
 
 
