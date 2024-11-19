@@ -1,10 +1,9 @@
-import java.util.Scanner;
 
 public class myCar {
 
-  private String carModel, carModel2, carModel3;
-  private int carMake1,carMake2,carMake3;
-  private double carPrice1,carPrice2,carPrice3;
+  private String carModel;
+  private int carMake;
+  private double carPrice;
   
   
   public myCar(String carModel, int carMake, double carPrice){
@@ -17,9 +16,6 @@ public class myCar {
   
   }
   
-  public void Calculation() {
-    
-  }
   
   public static void main(String[] args){
   
@@ -29,14 +25,7 @@ public class myCar {
           System.out.println("Car Model :" + carObj.carModel);
           System.out.println("Manufacturing date :" + carObj.carMake);
           System.out.println("Car Price :" + carObj.carPrice);
-
-
-          Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-          System.out.println("Enter username");
-
-          String userName = myObj.nextLine();  // Read user input
-          System.out.println("Username is: " + userName);  // 
-          carObj.Calculation();
+     
 
   
         }
