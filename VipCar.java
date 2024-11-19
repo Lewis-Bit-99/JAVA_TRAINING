@@ -47,15 +47,15 @@ static int CarPrice = 0;
    
     if (CarPrice >= 50000) {
         
-        System.out.println("The Buyer is a VIP");
+        System.out.println("You are a VIP");
 
     }else if(CarPrice == 0){
        
-        System.out.println("AHH Poor People!!");
+        System.out.println("AHH Poor Human!!");
 
     }else{
 
-        System.out.println("The Buyer is a normal people");
+        System.out.println("You are a mortal");
     }
 
 
