@@ -1,47 +1,68 @@
 public class carMatrix{
 
 
+    String [][] carModel = {
+
+        {"Proton", "Viva", "Myvi"},
+        {"Saga", "Axia", "Almera" },
+        {"Kenari", "Kancil", "Vios"},
+    };
+
+     int [][] carPrice = {
+
+        {55000 ,10000, 15000},
+        {2000, 4000 ,60000},
+        {6000, 12000, 24000},
+    };
+
+
     public carMatrix(){
 
 
-
-         String [][] matrix2 = {
-
-            {"1", "Viva", "30000"},
-            {"2", "Axia", "70000" },
-            {"3", "Kancil", "110000"},
-        };
-
-
-        for (int row=0; row<matrix2.length; row++) {
-            for (int col=0; col<matrix2[row].length; col++) {
-                System.out.print(matrix2[row][col] + " ");
+        System.out.println("3x3 Car Model Lists :");
+        for (int row=0; row<carModel.length; row++) {
+            for (int col=0; col<carModel[row].length; col++) {
+                System.out.print(carModel[row][col] + " ");
             }
-            System.out.println();
+           System.out.println();
         }
+       
+        System.out.println("\n=====================================");
 
-        System.out.println("=====================================");
-        for (String matrixRow[] : matrix2) {
-            for (String matrixCol: matrixRow) {
-
+        System.out.println("3x3 Car Price Lists :");
+        for (int matrixRow[] : carPrice) {
+            for (int matrixCol: matrixRow) {
 
                 System.out.print(matrixCol + " ");
+
             }
-            
             System.out.println();
         }
+     
+        System.out.println("\n====================================="); 
 
+        for (int row = 0; row < carPrice.length; row++) { 
+            for (int col = 0; col < carPrice[row].length; col++) { 
+                if (carPrice[row][col] > 50000) { 
+                    System.out.println("Model: " + carModel[row][col] + ", Price: " + carPrice[row][col]); 
+                } 
+            } 
+        }
+               
 
     }
 
+        
      public static void main(String[] args) {
          
 
-        carMatrix cm = new carMatrix();
+       new carMatrix();
 
          
 
-     }
+      }
 
-    
 }
+
+
+
